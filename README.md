@@ -12,17 +12,19 @@
 В каталоге проекта вы можете запустить:
 
 ### `npm start`
-1.Создайте файл .env с вашим API-ключом openweathermap:
+- Создайте файл .env с вашим API-ключом openweathermap:
 `REACT_APP_API_KEY = 'ваш ключ'`
-2. npm install 
-3. npm start 
-4. Открыть [http://localhost:3000](http://localhost:3000) для просмотра в браузере.
+- npm install
+ 
+- npm start 
+
+- Открыть [http://localhost:3000](http://localhost:3000) для просмотра в браузере.
 
 Страница перезагрузится, когда вы внесете изменения.
 Вы также можете увидеть любые ошибки lint в консоли.
 
 ### `npm run build`
 
-1. Продакшен сборка.
+- Продакшен сборка.
 
 
