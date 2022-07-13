@@ -1,0 +1,25 @@
+.app__section {
+  animation: open-page 1.5s;
+}
+.app__section button {
+  position: relative;
+}
+.app__section button svg {
+  position: absolute;
+  opacity: 0;
+  left: 10px;
+  top: auto;
+}
+.app__section button:disabled svg {
+  opacity: 1;
+}
+@keyframes open-page {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
