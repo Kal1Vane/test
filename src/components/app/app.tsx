@@ -37,7 +37,7 @@ function App() {
   
   return (
     <section className="app__section flex justify-center items-center flex-col gap-40 transition-transform">
-      <h1 className="text-3xl font-bold cursor-default">
+      <h1 className="text-center text-3xl font-bold cursor-default">
         Узнать погоду в городе Челябинск.
       </h1>
       <section className="flex justify-center items-center flex-col gap-1">
@@ -47,8 +47,8 @@ function App() {
         <path className="opacity-75" fill="rgb(99 102 241)" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
       </svg>
           Click</button>
-        {isError && <h4 className="uppercase cursor-default text-rose-800 text-base">Error</h4>}
-        {dataWeather && <div className="cursor-default text-3xl font-bold ">{dataWeather.temperature}&deg; Температура сейчас</div>}
+        {isError && <h4 className="text-center uppercase cursor-default text-rose-800 text-base">Error</h4>}
+        {dataWeather && <div className="text-center cursor-default text-3xl font-bold ">{dataWeather.temperature}&deg; Температура сейчас</div>}
       </section>
     </section>
   );
