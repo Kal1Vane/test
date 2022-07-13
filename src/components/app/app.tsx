@@ -7,8 +7,6 @@ import './app.css';
 
 
 function App() {
-  
-  console.log(test);
   const [isError,setError] = useState<boolean>(false);
   const [isDisabled,setDisabled] = useState<boolean>(false);
   const [dataWeather,setDataWeater] = useState<null | WeatherNow>(null);
