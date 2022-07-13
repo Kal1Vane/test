@@ -13,9 +13,11 @@ function App() {
   const [isDisabled,setDisabled] = useState<boolean>(false);
   const [dataWeather,setDataWeater] = useState<null | WeatherNow>(null);
   
+  const API_KEY = "5a69278a0fa2ffc8825ebd3c0e37ed14";
+
   async function fetchWeather(){
     try {
-    const response = await fetch(`${BASED_URL}data/2.5/weather?lat=${DEFAULT_CITY.latitude}&lon=${DEFAULT_CITY.longitude}&appid=${secrets.REACT_APP_API_KEY}&units=metric`);
+    const response = await fetch(`${BASED_URL}data/2.5/weather?lat=${DEFAULT_CITY.latitude}&lon=${DEFAULT_CITY.longitude}&appid=${API_KEY}&units=metric`);
     const data = normalaizeResponseServer(await response.json())
     return data;
     } catch (error){
