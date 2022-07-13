@@ -7,6 +7,8 @@ import './app.css';
 const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
+  const test = secrets.REACT_APP_API_KEY;
+  console.log(test);
   const [isError,setError] = useState<boolean>(false);
   const [isDisabled,setDisabled] = useState<boolean>(false);
   const [dataWeather,setDataWeater] = useState<null | WeatherNow>(null);
