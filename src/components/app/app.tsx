@@ -4,10 +4,10 @@ import { WeatherNow } from '../../types/types';
 import { normalaizeResponseServer } from '../../utils/utils';
 import './app.css';
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+
 
 function App() {
-  const test = secrets.REACT_APP_API_KEY;
+  
   console.log(test);
   const [isError,setError] = useState<boolean>(false);
   const [isDisabled,setDisabled] = useState<boolean>(false);
@@ -15,7 +15,7 @@ function App() {
   
   async function fetchWeather(){
     try {
-    const response = await fetch(`${BASED_URL}data/2.5/weather?lat=${DEFAULT_CITY.latitude}&lon=${DEFAULT_CITY.longitude}&appid=${API_KEY}&units=metric`);
+    const response = await fetch(`${BASED_URL}data/2.5/weather?lat=${DEFAULT_CITY.latitude}&lon=${DEFAULT_CITY.longitude}&appid=${secrets.REACT_APP_API_KEY}&units=metric`);
     const data = normalaizeResponseServer(await response.json())
     return data;
     } catch (error){
